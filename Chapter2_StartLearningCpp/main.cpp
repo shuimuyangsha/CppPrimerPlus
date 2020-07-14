@@ -23,18 +23,39 @@ using namespace std;
 //	return 0;
 //}
 
-/*2.4 基础指令 */
+///*2.4 基础指令 */
+//int main()
+//{
+//	system("mode con cols=80 lines=40");  //设置控制台的大小，cols 是高度，lines是宽度
+//	std::cout << "这是一个测试，\n测试人员姓名：\"董晓辉\"\n" << endl;
+//	system("pause");
+//	system("cls");//清除屏幕
+//	printf("我好帅！\n");  //C 语言
+//	//system("color 13");  //设置控制台颜色
+//	system("pause");
+//	//system("E:\\我的下载\\test.txt");
+//	//system("‪‪‪E:\\test.txt");
+//	system("pause");
+//	return 0;
+//}
+
+
+/*2.5 游戏加载界面设计 */
 int main()
 {
+	system("color 04");//设置控制台颜色
 	system("mode con cols=80 lines=40");  //设置控制台的大小，cols 是高度，lines是宽度
-	std::cout << "这是一个测试，\n测试人员姓名：\"董晓辉\"\n" << endl;
-	system("pause");
-	system("cls");//清除屏幕
-	printf("我好帅！\n");  //C 语言
-	//system("color 13");  //设置控制台颜色
-	system("pause");
-	//system("E:\\我的下载\\test.txt");
-	//system("‪‪‪E:\\test.txt");
+	std::cout << "==========================================================\n" << endl;//顶部边框
+	std::cout << endl;
+	std::cout << "            王者荣耀\"控制台\"版 V1.0                     \n" << endl;
+	std::cout << endl << endl << endl << endl;
+	std::cout << "                正在加载游戏...                           \n" << endl;
+	std::cout << "                进度【8/100】                             \n" << endl;
+	std::cout << endl << endl << endl << endl;
+	std::cout << "      网站 http://dadaowangzhe.com                        \n" << endl;	
+	std::cout << "==========================================================\n" << endl;//底部边框	
+	system("pause");  
+	//system("color ?");
 	system("pause");
 	return 0;
 }
