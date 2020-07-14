@@ -40,22 +40,39 @@ using namespace std;
 //}
 
 
-/*2.5 游戏加载界面设计 */
-int main()
+///*2.5 游戏加载界面设计 */
+//int main()
+//{
+//	system("color 04");//设置控制台颜色
+//	system("mode con cols=80 lines=40");  //设置控制台的大小，cols 是高度，lines是宽度
+//	std::cout << "==========================================================\n" << endl;//顶部边框
+//	std::cout << endl;
+//	std::cout << "            王者荣耀\"控制台\"版 V1.0                     \n" << endl;
+//	std::cout << endl << endl << endl << endl;
+//	std::cout << "                正在加载游戏...                           \n" << endl;
+//	std::cout << "                进度【8/100】                             \n" << endl;
+//	std::cout << endl << endl << endl << endl;
+//	std::cout << "      网站 http://dadaowangzhe.com                        \n" << endl;	
+//	std::cout << "==========================================================\n" << endl;//底部边框	
+//	system("pause");  
+//	//system("color ?");
+//	system("pause");
+//	return 0;
+//}
+
+///*2.6 万物皆数字（进制） */
+int main(void)
 {
-	system("color 04");//设置控制台颜色
-	system("mode con cols=80 lines=40");  //设置控制台的大小，cols 是高度，lines是宽度
-	std::cout << "==========================================================\n" << endl;//顶部边框
-	std::cout << endl;
-	std::cout << "            王者荣耀\"控制台\"版 V1.0                     \n" << endl;
-	std::cout << endl << endl << endl << endl;
-	std::cout << "                正在加载游戏...                           \n" << endl;
-	std::cout << "                进度【8/100】                             \n" << endl;
-	std::cout << endl << endl << endl << endl;
-	std::cout << "      网站 http://dadaowangzhe.com                        \n" << endl;	
-	std::cout << "==========================================================\n" << endl;//底部边框	
-	system("pause");  
-	//system("color ?");
+	std::cout << "123456"<<endl;
+	system("pause");
+	std::cout <<1415926 << endl;
+	std::cout << 10'000'000'000'000 +1 << endl; 
+	system("pause");
+	cout << 0b11 << endl;
+	system("pause");
+	cout << 011 << endl;
+	system("pause");
+	cout << 0xff << endl;
 	system("pause");
 	return 0;
 }
