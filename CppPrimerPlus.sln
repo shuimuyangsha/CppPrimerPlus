@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter2_StartLearningCpp", "Chapter2_StartLearningCpp\Chapter2_StartLearningCpp.vcxproj", "{7CE6CEFA-723A-4D57-853F-B0586D5CA4BF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5C2578FA-1C62-4E62-ACE1-E8793C81DC18}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\工作资料\我的图书库\专业理论图书\C语言学习资料\C++ Primer Plus 第6版 中文版.pdf = ..\..\..\工作资料\我的图书库\专业理论图书\C语言学习资料\C++ Primer Plus 第6版 中文版.pdf
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter03_CppArithmeticOperator", "Chapter03_CppArithmeticOperator\Chapter03_CppArithmeticOperator.vcxproj", "{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +28,14 @@ Global
 		{7CE6CEFA-723A-4D57-853F-B0586D5CA4BF}.Release|x64.Build.0 = Release|x64
 		{7CE6CEFA-723A-4D57-853F-B0586D5CA4BF}.Release|x86.ActiveCfg = Release|Win32
 		{7CE6CEFA-723A-4D57-853F-B0586D5CA4BF}.Release|x86.Build.0 = Release|Win32
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Debug|x64.ActiveCfg = Debug|x64
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Debug|x64.Build.0 = Debug|x64
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Debug|x86.ActiveCfg = Debug|Win32
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Debug|x86.Build.0 = Debug|Win32
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Release|x64.ActiveCfg = Release|x64
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Release|x64.Build.0 = Release|x64
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Release|x86.ActiveCfg = Release|Win32
+		{3AD587EC-63D0-43DC-95A9-7BCE7B660BF5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
