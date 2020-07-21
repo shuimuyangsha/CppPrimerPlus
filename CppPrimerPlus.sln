@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter03_CppArithmeticOper
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter06_BranchStatements_LogicalOperators", "Chapter06_BranchStatements_LogicalOperators\Chapter06_BranchStatements_LogicalOperators.vcxproj", "{EA89B588-C68B-4AFA-801E-2F23C8E9C098}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter10_Object_Class", "Chapter10_Object_Class\Chapter10_Object_Class.vcxproj", "{B49CF4F1-E777-48AC-81DC-443D1B249057}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -46,6 +48,14 @@ Global
 		{EA89B588-C68B-4AFA-801E-2F23C8E9C098}.Release|x64.Build.0 = Release|x64
 		{EA89B588-C68B-4AFA-801E-2F23C8E9C098}.Release|x86.ActiveCfg = Release|Win32
 		{EA89B588-C68B-4AFA-801E-2F23C8E9C098}.Release|x86.Build.0 = Release|Win32
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Debug|x64.ActiveCfg = Debug|x64
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Debug|x64.Build.0 = Debug|x64
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Debug|x86.ActiveCfg = Debug|Win32
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Debug|x86.Build.0 = Debug|Win32
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Release|x64.ActiveCfg = Release|x64
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Release|x64.Build.0 = Release|x64
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Release|x86.ActiveCfg = Release|Win32
+		{B49CF4F1-E777-48AC-81DC-443D1B249057}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
