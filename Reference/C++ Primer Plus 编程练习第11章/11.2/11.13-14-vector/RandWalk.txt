@@ -1,0 +1,16 @@
+Enter target distance (q to quit): After 620 steps, the subject has the following location:
+(x,y) = (49.9451, 10.8221)
+ or
+(m,a) = (51.1041, 12.2258)
+Average outward distance per step = 0.082426
+Enter target distance (q to quit): After 727 steps, the subject has the following location:
+(x,y) = (47.5773, -15.5739)
+ or
+(m,a) = (50.0614, -18.1252)
+Average outward distance per step = 0.0688603
+Enter target distance (q to quit): After 1670 steps, the subject has the following location:
+(x,y) = (39.0679, 31.3024)
+ or
+(m,a) = (50.0614, 38.7027)
+Average outward distance per step = 0.0299769
+Enter target distance (q to quit): Bys!

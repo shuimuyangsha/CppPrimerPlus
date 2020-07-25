@@ -77,24 +77,116 @@ using namespace std;
 //	return 0;
 //}
 
-/* struct与 class 的区别,class 中成员的默认属性是私有*/
-class C1 {
-	int m_A;
+///* struct与 class 的区别,class 中成员的默认属性是私有*/
+//class C1 {
+//	int m_A;
+//
+//};
+//struct C2 {
+//	int m_B;
+//};
+//
+//int main(void)
+//{
+//	C1 c1;
+//	C2 c2;
+//
+//	//c1.m_A = 10;//不可以访问类中的成员，因为它是私有的
+//	c2.m_B = 10;//可以正常访问类中的成员。
+//
+//	system("pause");
+//	return 0;
+//}
+
+///*构造函数 析构函数 对象的初始化和清理。定义一个类，表示银行账户*/
+////1、构造函数 进行初始化操作
+//
+////2、析构函数 进行清理的操作
+//class BankAccount
+//{
+//private:
+//	char name[40];
+//	char acctnum[25];
+//	double balance;
+//public:
+//	//1 构造函数  没有返回值 不用写void;函数名与类名相同；构造函数可以有参数，可以发生重载；创建对象的时候，构造函数会自动调用，而且只调用一次。
+//	//BankAccount(const char* client, char* num, double bal = 0.0)
+//	BankAccount()
+//	{
+//		
+//		cout << "BankAccount 构造函数调用" << endl;
+//	}
+//
+//	//2、析构函数 进行清理操作；没有返回值，不写void；函数名和类名相同 在名称前加 ~  ；不可以有参数，不可以发生重载；构造函数会自动调用
+//	~BankAccount()
+//	{
+//		cout << "BankAccount 析构函数调用" << endl;
+//	}
+//	//void show(void) const;
+//	//void deposit(double cash);
+//	//void withdraw(double cash);
+//
+//
+//};
+//
+//void fun1()
+//{
+//	BankAccount acc1;
+//}
+//
+//int main(void)
+//{
+//	fun1();
+//
+//	system("pause");
+//	return 0;
+//}
+
+/*构造函数的分类和调用*/
+//按照参数分类为 有参和无参构造  无参又称为默认构造函数
+//按照类型分类为 普通构造和拷贝构造
+class BankAccount
+{
+private:
+	string name;
+	string acctnum;
+	double balance;
+public:
+	BankAccount(const string & client, string & num, double bal = 0.0)
+	{
+		cout << "调用 有参构造" << endl;
+		name = client;
+		acctnum = num;
+		balance = bal;
+	}
+
+	void show(void) const
+	{
+		cout << "你的银行卡余额：" << balance << endl;
+	}
+	//void deposit(double cash);
+	//void withdraw(double cash);
 
 };
-struct C2 {
-	int m_B;
-};
+
+void fun1()
+{
+	string s1 = "XiaohuiDong";
+	string s2 = "123456789";
+
+	BankAccount acc1(s1, s1,2000);
+
+	acc1.show();
+
+
+}
 
 int main(void)
 {
-	C1 c1;
-	C2 c2;
-
-	//c1.m_A = 10;//不可以访问类中的成员，因为它是私有的
-	c2.m_B = 10;//可以正常访问类中的成员。
+	fun1();
 
 	system("pause");
 	return 0;
 }
+
 
