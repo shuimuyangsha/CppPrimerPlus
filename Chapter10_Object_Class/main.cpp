@@ -142,51 +142,156 @@ using namespace std;
 //	return 0;
 //}
 
-/*构造函数的分类和调用*/
-//按照参数分类为 有参和无参构造  无参又称为默认构造函数
-//按照类型分类为 普通构造和拷贝构造
-class BankAccount
-{
-private:
-	string name;
-	string acctnum;
-	double balance;
+///*构造函数的分类和调用*/
+////按照参数分类为 有参和无参构造  无参又称为默认构造函数
+////按照类型分类为 普通构造和拷贝构造
+//class BankAccount
+//{
+//private:
+//	string name;
+//	string acctnum;
+//	double balance;
+//public:
+//	BankAccount(const string & client, string & num, double bal = 0.0)
+//	{
+//		cout << "调用 有参构造" << endl;
+//		name = client;
+//		acctnum = num;
+//		balance = bal;
+//	}
+//
+//	void show(void) const
+//	{
+//		cout << "你的银行卡余额：" << balance << endl;
+//	}
+//	//void deposit(double cash);
+//	//void withdraw(double cash);
+//
+//};
+//
+//void fun1()
+//{
+//	string s1 = "XiaohuiDong";
+//	string s2 = "123456789";
+//
+//	BankAccount acc1(s1, s1,2000);
+//
+//	acc1.show();
+//
+//
+//}
+//
+//int main(void)
+//{
+//	fun1();
+//
+//	system("pause");
+//	return 0;
+//}
+
+///*构造函数的调用规则*/
+////1、只要创建一个类，C++编译器会给每个类添加至少3个函数
+////默认构造  （空实现）
+////析构函数  （空实现）
+////拷贝函数  （值拷贝）
+////2、如果我们写了有参构造函数，编译器不在提供默认构造函数
+//class Person {
+//
+//public:
+//	//Person()
+//	//{
+//	//	cout << "Person 的默认构造函数调用" << endl;
+//	//}
+//	Person(int age)
+//	{
+//		m_Age = age;
+//		cout << "Person 的有参构造函数调用" << endl;
+//	}
+//	//Person(const Person& p)
+//	//{
+//	//	cout << "Person 的拷贝构造函数调用" << endl;
+//	//	m_Age = p.m_Age;
+//	//}
+//	~Person()
+//	{
+//		cout << "Person 的析构函数调用" << endl;
+//	}
+//
+//	int m_Age;
+//
+//};
+//
+////void fun01()
+////{
+////	Person p;
+////	p.m_Age = 20;
+////
+////	Person p2(p);
+////
+////	cout << "p2的年龄=" << p2.m_Age << endl;
+////
+////}
+//void fun02()
+//{
+//	Person p3(21);
+//}
+//
+//int main()
+//{
+//	//fun01();
+//	fun02();
+//
+//	system("pause");
+//	return 0;
+//}
+
+/*深拷贝与浅拷贝*/
+class Person {
 public:
-	BankAccount(const string & client, string & num, double bal = 0.0)
+	//Person()
+	//{
+	//	cout << "默认构造函数调用" << endl;
+	//}
+	Person(int age,int height)
 	{
-		cout << "调用 有参构造" << endl;
-		name = client;
-		acctnum = num;
-		balance = bal;
+		m_Age = age;
+		m_Height = new int(height);
+		cout << "有参构造函数调用" << endl;
 	}
-
-	void show(void) const
+	Person(const Person & p)
 	{
-		cout << "你的银行卡余额：" << balance << endl;
+		cout << "拷贝构造函数调用" << endl;
+		m_Age = p.m_Age;
+		//m_Height = p.m_Height;//浅拷贝
+		m_Height = new int(*p.m_Height);//深拷贝
 	}
-	//void deposit(double cash);
-	//void withdraw(double cash);
-
+	~Person()
+	{
+		cout << "析构函数调用" << endl;
+		if (m_Height != NULL)
+		{
+			delete m_Height;
+		}
+	}
+	int m_Age;
+	int *m_Height;
 };
 
-void fun1()
+void fun01()
 {
-	string s1 = "XiaohuiDong";
-	string s2 = "123456789";
+	Person p1(12,175);
+	cout << "p1的年龄=" << p1.m_Age << "  p1的身高=" << *p1.m_Height << endl;
+	Person p2(p1);
 
-	BankAccount acc1(s1, s1,2000);
-
-	acc1.show();
-
+	cout << "p2的年龄=" << p2.m_Age << "  p2的身高=" << *p2.m_Height << endl;
 
 }
 
-int main(void)
+
+int main()
 {
-	fun1();
+	fun01();
 
 	system("pause");
 	return 0;
 }
-
-
