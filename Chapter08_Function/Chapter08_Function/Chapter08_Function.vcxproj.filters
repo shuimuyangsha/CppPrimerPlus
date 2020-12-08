@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Reference\Chapter 3\floatnum.cpp">
+    <ClCompile Include="..\..\Reference\Chapter 8\firstref.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
