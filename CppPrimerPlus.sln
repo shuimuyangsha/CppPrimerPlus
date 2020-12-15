@@ -22,6 +22,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter13_ClassInherit", "C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter08_Function", "Chapter08_Function\Chapter08_Function\Chapter08_Function.vcxproj", "{A206D0FE-9667-4482-9C42-64F9084E65D3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter09_MemoryModelNamespace", "Chapter09_MemoryModelNamespace\Chapter09_MemoryModelNamespace\Chapter09_MemoryModelNamespace.vcxproj", "{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -86,6 +88,14 @@ Global
 		{A206D0FE-9667-4482-9C42-64F9084E65D3}.Release|x64.Build.0 = Release|x64
 		{A206D0FE-9667-4482-9C42-64F9084E65D3}.Release|x86.ActiveCfg = Release|Win32
 		{A206D0FE-9667-4482-9C42-64F9084E65D3}.Release|x86.Build.0 = Release|Win32
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Debug|x64.ActiveCfg = Debug|x64
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Debug|x64.Build.0 = Debug|x64
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Debug|x86.ActiveCfg = Debug|Win32
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Debug|x86.Build.0 = Debug|Win32
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Release|x64.ActiveCfg = Release|x64
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Release|x64.Build.0 = Release|x64
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Release|x86.ActiveCfg = Release|Win32
+		{5FDF4A30-259B-4E01-998E-CD72B2CCC1BC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
